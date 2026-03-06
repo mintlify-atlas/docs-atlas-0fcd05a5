@@ -1,0 +1,131 @@
+{
+  "projectType": "saas",
+  "projectName": "Open Contracting Portal",
+  "projectDescription": "A data analytics platform for importing, storing, visualizing, and exporting public procurement data in the Open Contracting Data Standard (OCDS) format.",
+  "theme": "aspen",
+  "primaryColor": "#2563eb",
+  "lightColor": "#60a5fa",
+  "darkColor": "#1e40af",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/data-import",
+              "features/dashboard-analytics",
+              "features/visualizations",
+              "features/data-export",
+              "features/corruption-indicators"
+            ]
+          },
+          {
+            "group": "User Guides",
+            "pages": [
+              "guides/excel-import",
+              "guides/using-dashboard",
+              "guides/filtering-data",
+              "guides/maps-and-charts",
+              "guides/exporting-ocds"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Development",
+        "groups": [
+          {
+            "group": "Architecture",
+            "pages": [
+              "development/architecture",
+              "development/modules",
+              "development/tech-stack",
+              "development/data-model"
+            ]
+          },
+          {
+            "group": "Deployment",
+            "pages": [
+              "deployment/docker",
+              "deployment/configuration",
+              "deployment/system-service"
+            ]
+          },
+          {
+            "group": "API Reference",
+            "pages": [
+              "api/overview",
+              "api/authentication",
+              "api/analytics-endpoints",
+              "api/data-endpoints",
+              "api/ocds-schema"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Administration",
+        "groups": [
+          {
+            "group": "Admin Interface",
+            "pages": [
+              "admin/overview",
+              "admin/user-management",
+              "admin/security"
+            ]
+          },
+          {
+            "group": "Data Management",
+            "pages": [
+              "admin/import-process",
+              "admin/data-validation",
+              "admin/mongodb-operations"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "admin/environment-variables",
+              "admin/database-setup",
+              "admin/troubleshooting"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Import public procurement data from Excel files",
+    "Store data natively in OCDS format using MongoDB",
+    "Live analytics dashboard with interactive charts and maps",
+    "Filter and compare procurement data across multiple dimensions",
+    "Export data in OCDS-compliant format",
+    "Corruption risk indicators and red flag detection",
+    "Multi-module Spring Boot architecture",
+    "Apache Wicket admin interface for data management"
+  ],
+  "publicApiSurface": [
+    "GET /api/averageNumberOfTenderers",
+    "GET /api/averageNumberOfTenderersPerBuyer",
+    "GET /api/averageTenderAndAwardPeriods",
+    "GET /api/awardsWonLost",
+    "GET /api/bidderGroupWinners",
+    "GET /api/budgetStats",
+    "GET /api/contractStats",
+    "GET /api/corruptionRiskDashboardIndicators",
+    "GET /api/ocds/release",
+    "GET /api/ocds/package",
+    "POST /api/import/excel",
+    "GET /api/export/ocds"
+  ]
+}
